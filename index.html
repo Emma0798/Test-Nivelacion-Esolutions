@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles/estilos.css">
+</head>
+<body>
+    <form class="encuesta">
+        <label for="">Nombre y apellido</label>
+        <input type="text" name="nombre" placeholder="Ingrese su nombre">
+        <label for="">Dirección</label>
+        <input type="text" name="direccion" placeholder="Ingrese su dirección">
+        <label>Fecha de nacimiento</label>
+        <input type="date" name="nacimiento">
+        <label>Género</label>
+        <div class="info-encuesta">
+            <label class="label-linea">
+                <input type="radio" name="genero" id="radio-fm"> 
+                Femenino
+            </label>
+            <label class="label-linea">
+                <input type="radio" name="genero" id="radio-ms">
+                Masculino
+            </label>
+            <label class="label-linea">
+                <input type="radio" name="genero" id="radio-other">
+                Otro
+            </label>
+        </div>
+        <label for="">Email</label>
+        <input type="email" name="email" placeholder="Ingrese su email">
+        <label for="">Contraseña</label>
+        <input type="password" name="contraseña" placeholder="Ingrese una contraseña">
+        <label for="">Indique en que tecnologias se desempeña</label>
+        <div class="info-encuesta">
+            <label class="label-linea" for="">
+                <input type="checkbox" name="tecnologia" value="java">
+                Java
+            </label>
+            <label class="label-linea" for="">
+                <input type="checkbox" name="tecnologia" value="js">
+                Javascript
+            </label>
+            <label class="label-linea" for="">
+                <input type="checkbox" name="tecnologia" value="py">
+                Python
+            </label>
+            <label class="label-linea" for="">
+                <input type="checkbox" name="tecnologia" value="HTML">
+                HTML
+            </label>
+            <label class="label-linea" for="">
+                <input type="checkbox" name="tecnologia" value="CSS">
+                CSS
+            </label>
+            <label class="label-linea" for="">
+                <input type="checkbox" name="tecnologia" value="other">
+                Otro
+            </label>
+        </div>
+        <label for="">¿Cuantos años de experiencia posee?</label>
+        <div class="info-encuesta">
+            <label class="label-linea">
+                <input type="radio" name="exp" id="radio-0"> 
+                Menos de 1 año
+            </label>
+            <label class="label-linea">
+                <input type="radio" name="exp" id="radio-1">
+                De 1 año a 2 años
+            </label>
+            <label class="label-linea">
+                <input type="radio" name="exp" id="radio-2">
+                De 2 años a 3 años
+            </label>
+            <label class="label-linea">
+                <input type="radio" name="exp" id="radio-3">
+                3 años o mas
+            </label>
+        </div>
+        <label for="">¿Que frameworks conoce?</label>
+        <input type="text" name="framework" placeholder="Indique los frameworks">
+        <label for="">¿Ha trabajado antes con base de datos?</label>
+        <div class="info-encuesta">
+            <label class="label-linea">
+                <input type="radio" name="exp-bd" id="radio-yes"> 
+                Si
+            </label>
+            <label class="label-linea">
+                <input type="radio" name="exp-bd" id="radio-no">
+                No
+            </label>
+        </div>
+        <input type="submit">
+    </form>
+    <script src="javascript/prueba.js"></script>
+</body>
+</html>
